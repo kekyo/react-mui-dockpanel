@@ -1,0 +1,6 @@
+// react-mui-dockpanel - React MUI edge stacking layout component
+// Copyright (c) Kouji Matsui (@kekyo@mi.kekyo.net)
+// Under MIT.
+// https://github.com/kekyo/react-mui-dockpanel/
+
+/// <reference types="vite/client" />

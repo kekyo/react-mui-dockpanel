@@ -1,0 +1,71 @@
+{
+  "name": "react-mui-dockpanel",
+  "version": "0.1.0",
+  "description": "React MUI edge stacking layout component",
+  "keywords": [
+    "react",
+    "mui",
+    "dockpanel",
+    "layout"
+  ],
+  "author": "Kouji Matsui (@kekyo@mi.kekyo.net)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kekyo/react-mui-dockpanel"
+  },
+  "homepage": "https://github.com/kekyo/react-mui-dockpanel#readme",
+  "readme": "README_pack.md",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "images/react-mui-dockpanel-120.png",
+    "images/stacking_seq.png"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "dev:e2e": "vite --config vite.e2e.config.ts --host 127.0.0.1 --port 5173 --strictPort",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:e2e": "playwright test",
+    "test:unit": "vitest run",
+    "pack": "npm run build && screw-up pack --pack-destination ./artifacts"
+  },
+  "peerDependencies": {
+    "@mui/material": ">=5.0.0",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "@playwright/test": "latest",
+    "@testing-library/react": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "jsdom": "latest",
+    "prettier-max": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "screw-up": "latest",
+    "typescript": "latest",
+    "unplugin-dts": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}
