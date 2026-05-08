@@ -10,9 +10,21 @@ A DockPanel component library for React MUI that provides perimeter stacking.
 
 ---
 
+[(For Japanese language/日本語はこちら)](./README_ja.md)
+
+> Please note that this English version of the document was machine-translated and then partially edited, so it may contain inaccuracies.
+> We welcome pull requests to correct any errors in the text.
+
 ## What is this?
 
-`DockPanel` consumes perimeter panes according to the order of JSX. Each `Dock` takes an area from the rectangle that remains at that point, and the final `fill` receives the leftover area.
+Have you ever wanted to design a website where the layout scales roughly in proportion to the page size while maintaining the logical arrangement of each component?
+While this layout can be achieved using CSS Flexbox, managing and positioning components can often become cumbersome.
+This is particularly common in administrative page layouts and is often used when implementing a so-called "Explorer-style" pane layout.
+
+`DockPanel` is a layout component in React MUI that makes it easy to implement this type of page layout.
+
+Child components are placed in the outer `Dock` panels according to the order in the JSX.
+Each `Dock` takes up space from the remaining rectangle at that point, and the final `fill` takes the remaining space.
 
 With TypeScript JSX like this (style declarations omitted):
 
